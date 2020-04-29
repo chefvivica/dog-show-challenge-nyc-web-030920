@@ -2,13 +2,13 @@
   "dogs": [
     {
       "id": 1,
-      "name": "Baby",
+      "name": "baby shark",
       "breed": "Scottish Deerhound",
       "sex": "male"
     },
     {
       "id": 2,
-      "name": "Teddy",
+      "name": "koala",
       "breed": "Rhodesian Ridgeback",
       "sex": "female"
     },
@@ -44,7 +44,7 @@
     },
     {
       "id": 8,
-      "name": "Chloe",
+      "name": "Ivy",
       "breed": "Dandie Terrier",
       "sex": "male"
     },
@@ -123,56 +123,20 @@
     {
       "name": "hello ",
       "breed": "meow ",
-      "sex": "female ",
+      "sex": "male",
       "id": 21
     },
     {
-      "name": "hello ",
-      "breed": "meow ",
-      "sex": "female ",
+      "name": "Baby",
+      "breed": "Scottish Deerhound",
+      "sex": "male",
       "id": 22
     },
     {
-      "name": "hello ",
+      "name": "baby shark",
       "breed": "meow ",
-      "sex": "female ",
+      "sex": "male",
       "id": 23
-    },
-    {
-      "name": "hello ",
-      "breed": "meow ",
-      "sex": "female ",
-      "id": 24
-    },
-    {
-      "name": "hello ",
-      "breed": "meow ",
-      "sex": "female ",
-      "id": 25
-    },
-    {
-      "name": "hello ",
-      "breed": "meow ",
-      "sex": "female ",
-      "id": 26
-    },
-    {
-      "name": "ss",
-      "breed": "ss",
-      "sex": "ss",
-      "id": 27
-    },
-    {
-      "name": "ss",
-      "breed": "ss",
-      "sex": "ss",
-      "id": 28
-    },
-    {
-      "name": "dd",
-      "breed": "dd",
-      "sex": "m",
-      "id": 29
     }
   ]
 }
