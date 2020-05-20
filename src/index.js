@@ -12,25 +12,30 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
   const getDogs = () =>{
-    fetch(base)
+    return fetch(base)
     .then(r=>r.json())
-    .then(dogs=>dogs.forEach(dog=>{
-      renderDog(dog)
-    }))
   }
 
-
-  const renderDog = dog =>{
+  const makeTr = (dog) =>{
     const tr = document.createElement('tr')
     tr.innerHTML = `
     <td>${dog.name}</td>
     <td>${dog.breed}</td>
-      <td>${dog.sex}</td> 
-      <td><button class="edit" data-id=${dog.id}>Edit</button></td> 
+    <td>${dog.sex}</td> 
+    <td><button class="edit" data-id=${dog.id}>Edit</button></td> 
     `
-    tBody.append(tr)
-    const btn = document.querySelector('.edit')
-    btn.addEventListener("click",showDogInfo)
+    return tr
+  }
+
+  const renderDogs =()=>{
+      tBody.innerHTML=''
+    getDogs()
+    .then(dogs=>dogs.forEach(dog=>{
+      const tr = makeTr(dog)
+      tBody.append(tr)
+      const btn = document.querySelector('.edit')
+      btn.addEventListener("click",showDogInfo)
+    }))
   }
 
 
@@ -67,10 +72,11 @@ document.addEventListener("DOMContentLoaded",()=>{
         body:JSON.stringify(newDog)
       })
       .then(r =>r.json())
-      .then(getDogs)  
+      .then(renderDogs)
+       
     })
   }
 
-  getDogs()
+ renderDogs()
 
 })
